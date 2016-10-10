@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nu-Tech Engineering & Testing</title>
+<meta name="engineering" content="" />
+<meta name="Nu-Tech Engineer's Group" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+<link href="_Styles/default.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+  
+      
+    <!-- bjqs.css contains the *essential* css needed for the slider to work -->
+    <link rel="stylesheet" href="bjqs.css">
+
+    <!-- some pretty fonts for this demo page - not required for the slider -->
+  <!--  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> -->
+
+    <!-- demo.css contains additional styles used to set up this demo page - not required for the slider --> 
+    <link rel="stylesheet" href="demo.css">
+
+    <!-- load jQuery and the plugin -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">Nu-Tech Engineering & Testing</a></h1>
+	
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html" accesskey="index.html" title="Homepage">Homepage</a></li>
+				<li><a href="aboutus.html" accesskey="about.html" title="About Us">About Us</a></li>
+				<li><a href="services.html" accesskey="services.html" title="Services">Services</a></li>
+				<li><a href="opportunities.html" accesskey="opportunities" title="Opportunities">Opportunities</a></li>
+				<li><a href="contactus.html" accesskey="5" title="Contact Us">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+			<h2>Services</h2>
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-slide">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><a href="">
+			<img src="img/Photo1-Crane_Foundation_Design_with_installation_of_Steel_Piles.jpg" title="Crane Foundation Design with Installation of Steel Piles"></a></li>
+			<li><img src="img/Photo2-Geotechnical_Engineering_work.jpg" title="Geotechnical Engineering Work"></li>
+			<li><img src="img/Photo3a-Removing_a_garage_post_and_replacing_with_a_steel_beam.jpg" title="Removing a Garage Post and Replacing with a Steal Beam"></li>
+			<li><img src="img/Photo3b-Removing_a_garage_post_and_replacing_with_a_steel_beam.jpg" title="Removing a Garage Post and Replacing with a Steal Beam"></li>
+			<li><img src="img/Photo4a-Retaining_Wall_Design.jpg" title="Retaining Wall Design"></li>
+			<li><img src="img/Photo6a-Wood_Foundation.jpg" title="Wood Foundation"></li>
+			<li><img src="img/Photo6b-Wood_Foundation.jpg" title="Wood Foundation"></li>
+			<li><img src="img/Photo7a-Wood_Structure_Alternation_to_open_concept.jpg" title="Alternative to Open Concept"></li>
+			<li><img src="img/Photo7b-Wood_Structure_Alternation_to_open_concept.jpg" title="Alternative to Open Concept"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+      <!-- End outer wrapper -->
+      
+      <!-- attach the plug-in to the slider parent element and adjust the settings as required -->
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+          
+          $('#banner-slide').bjqs({
+            animtype      : 'slide',
+            height        : 500,
+            width         : 800,
+            responsive    : true,
+            randomstart   : true
+          });
+          
+        });
+      </script>
+		
+            <p>Some photos are the example of our work for your reference.</p>
+		</div>
+        
+	</div>
+
+
+
+
+	<div id="footer">
+		<p>Copyright (c) 1983 Nu-TechEngineering.ca. All rights reserved. </a>.</p>
+	</div>
+</div>
+</body>
+</html>
